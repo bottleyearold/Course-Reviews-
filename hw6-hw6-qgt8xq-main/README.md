@@ -2,11 +2,11 @@
 # Homework 6 - Course Review Application
 
 ## Authors
-1) Fiona Magee, qgt8xq, [fionamagee]
+1) Fiona Magee, qgt8xq, [bottleyearold]
 
 ## To Run
 
-[Add a brief description of which .java file to run, and what vm arguments are needed]
+[Run the CentralApplication.java]
 
 ## Contributions
 
@@ -14,7 +14,7 @@ List the primary contributions of each author. It is recommended to update this 
 
 ### [Author 1 - replace this with their name]
 
-* I created the entire code 
+* I design the entire code using SRP and tested for bugs   
 
 
 ## Issues
