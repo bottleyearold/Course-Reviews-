@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.sde.reviews.MyReviewController" style="-fx-background-color: #f3f4f8;">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label fx:id="userLabel" text="Logged in as: User" style="-fx-text-fill: #2c3e50; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #ffffff; -fx-padding: 5; -fx-border-color: #b0bec5; -fx-border-width: 1px;"/>
+    <Label text="Your Reviews:" style="-fx-text-fill: #2c3e50; -fx-font-weight: bold; -fx-background-color: #ffffff; -fx-padding: 5; -fx-border-color: #b0bec5; -fx-border-width: 1px;"/>
+    <ListView fx:id="reviewList" VBox.vgrow="ALWAYS" prefWidth="300" prefHeight="300" style="-fx-background-color: #ffffff; -fx-border-color: #b0bec5; -fx-border-width: 1px; -fx-border-radius: 5px;">
+        <VBox.margin>
+            <Insets top="10" bottom="10" right="10" left="10"/>
+        </VBox.margin>
+    </ListView>
+    <Button text="Go Back" onAction="#handleGoBackAction" style="-fx-background-color: #607d8b; -fx-text-fill: white; -fx-background-radius: 5px; -fx-padding: 10;"/>
+</VBox>

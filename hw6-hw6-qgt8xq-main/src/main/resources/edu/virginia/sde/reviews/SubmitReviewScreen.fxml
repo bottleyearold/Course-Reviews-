@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="edu.virginia.sde.reviews.SubmitReviewController" style="-fx-background-color: #f2f2f7;">
+    <padding>
+        <Insets bottom="20" left="20" top="20" right="20"/>
+    </padding>
+    <HBox spacing="10">
+        <Label fx:id="userLabel" text="User: [Your Name]" style="-fx-text-fill: #333; -fx-background-color: #ffffff; -fx-padding: 5;"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label fx:id="courseLabel" text="Course: [Course Name]" style="-fx-text-fill: #333; -fx-background-color: #ffffff; -fx-padding: 5;"/>
+    </HBox>
+    <GridPane VBox.vgrow="ALWAYS" hgap="15" vgap="15" alignment="CENTER">
+        <Label text="Rating (1-5):" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-text-fill: #333; -fx-font-weight: bold;"/>
+        <TextField fx:id="ratingField" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;"/>
+        <Label text="Comment:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-text-fill: #333; -fx-font-weight: bold;"/>
+        <TextField fx:id="commentField" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;"/>
+    </GridPane>
+    <Label fx:id="messageLabel" style="-fx-text-fill: red; -fx-font-size: 12px;"/>
+    <HBox VBox.vgrow="ALWAYS" spacing="15" alignment="CENTER">
+        <Button text="Submit" onAction="#handleSubmissionAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 5px;"/>
+        <Button text="Go Back" onAction="#handleGoBackAction" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-background-radius: 5px;"/>
+    </HBox>
+</VBox>
