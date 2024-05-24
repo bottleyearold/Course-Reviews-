@@ -12,7 +12,7 @@
 
 List the primary contributions of each author. It is recommended to update this with your contributions after each coding session.:
 
-### [Author 1 - replace this with their name]
+### [Author 1 - Fiona Magee]
 
 * I design the entire code using SRP and tested for bugs   
 
